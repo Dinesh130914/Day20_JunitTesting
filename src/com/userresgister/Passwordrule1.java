@@ -1,4 +1,4 @@
-package com.userresgister;
+mipackage com.userresgister;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
