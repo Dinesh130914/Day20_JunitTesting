@@ -7,19 +7,17 @@ import java.util.regex.Pattern;
 public class Passwordrule2 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.println("Enter the Password(Should have atleast one uppercase)");
 		String pwd = scanner.next();
-		
+
 		String result = "^(?=.*[A-Z])[A-Za-z]{8,15}$";
 		Pattern regex = Pattern.compile(result);
 		Matcher inputMatcher = regex.matcher(pwd);
-		
-		if(inputMatcher.matches()) 
-		{
+
+		if (inputMatcher.matches()) {
 			System.out.println("Valid password");
-		}else 
-		{
+		} else {
 			System.out.println("Invalid.should have atleast one uppercase");
 		}
 	}
