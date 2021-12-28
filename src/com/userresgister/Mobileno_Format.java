@@ -12,7 +12,7 @@ public class Mobileno_Format {
 		System.out.println("Enter the mobile no");
 		String mobileno = scanner.next();
 		
-		String pattern = "^[0-9]{2}[\s]{1}[0-9]{10}$";
+		String pattern = "^[0-9]{2}[\s]?[0-9]{10}$";
 		Pattern regex = Pattern.compile(pattern);
 		Matcher inputmMatcher = regex.matcher(mobileno);
 		
